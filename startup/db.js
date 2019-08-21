@@ -9,9 +9,9 @@ const logger = winston.createLogger({
 });
 
 module.exports = function(){
-    const db = config.get('db');
-    mongoose.connect(config.get('db'))
+
+    mongoose.connect("mongodb+srv://root:root@vishal-v8jx2.mongodb.net/test?retryWrites=true&w=majority")
     .then(() => {
-        logger.info(`Connected to ${db}`);
+        logger.info("Connected ");
     })
 }
