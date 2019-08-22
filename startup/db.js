@@ -1,4 +1,5 @@
 const winston = require('winston');
+require('winston-mongodb');
 const mongoose = require('mongoose');
 const config = require('config');
 
