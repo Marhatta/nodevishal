@@ -11,7 +11,7 @@ const logger = winston.createLogger({
 
 module.exports = function(){
 
-    mongoose.connect("mongodb+srv://root:root@vishal-v8jx2.mongodb.net/test?retryWrites=true&w=majority")
+    mongoose.connect("mongodb+srv://root:root@vishal-v8jx2.mongodb.net/test?retryWrites=true&w=majority",{useNewUrlParser:true})
     .then(() => {
         logger.info("Connected ");
     })
